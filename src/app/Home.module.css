@@ -206,3 +206,34 @@
     letter-spacing: 0.9px;
     margin-bottom: 50px;
 }
+
+.resale h2 {
+    color: #20277C;
+    font-family: Roboto Serif;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+
+.resale h4 {
+    color: #20277C;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Roboto Serif;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.resale p {
+    color: var(--Dark-Black-2, #757A77);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: start;
+}

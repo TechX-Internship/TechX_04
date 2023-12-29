@@ -70,7 +70,7 @@ const page = () => {
       {/* choose start */}
       <section className={styles.choose}>
         <div className="container">
-          <div className='absolute bottom-0 translate-y-[113px]'>
+          <div className='absolute bottom-0 translate-y-[114px]'>
             <div className="flex gap-5">
               <div className={styles.card}>
                 <div className={styles.gradient}>
@@ -146,7 +146,6 @@ const page = () => {
               <img src='/images/gallery/gallery-5.png' alt="image" />
             </div>
           </div>
-
           {/* <div className="flex flex-col items-center justify-start w-full">
             <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between w-full">
               <div className="flex md:flex-1 flex-col gap-2.5 items-center justify-start w-[33%] md:w-full">
@@ -201,6 +200,36 @@ const page = () => {
               </div>
             </div>
           </div> */}
+
+          <div className={`flex mt-[100px] ${styles.resale}`}>
+            <div className="w-1/2">
+              <h2>This Is How Resale Works</h2>
+              <div className='flex mb-5'>
+                <img src="/images/resale-1.png" alt="" />
+                <div className='ml-5'>
+                  <h4>Reach out to FSB</h4>
+                  <p>To sell your booking, you can contact FSB through WhatsApp or cal</p>
+                </div>
+              </div>
+              <div className='flex mb-5'>
+                <img src="/images/resale-2.png" alt="" />
+                <div className='ml-5'>
+                  <h4>We Find Buyer</h4>
+                  <p>A traveller gets lucky and buys your deal</p>
+                </div>
+              </div>
+              <div className='flex mb-5'>
+                <img src="/images/resale-3.png" alt="" />
+                <div className='ml-5'>
+                  <h4>You Get Paid</h4>
+                  <p>The buyer pays for your booking and enjoys a great stay</p>
+                </div>
+              </div>
+            </div>
+            <div className="w-1/2">
+              <img src="/images/gallery/gallery-bg.jpg" alt="" />
+            </div>
+          </div>
 
         </div>
       </section>
