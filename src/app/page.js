@@ -114,7 +114,7 @@ const page = () => {
 
       {/* plan start */}
       <section className='pt-52 pb-24'>
-        <Title title='Plan Your Trip' subtitle='Make Your Holiday Amazing' />
+        <Title subtitle='Plan Your Trip' title='Make Your Holiday Amazing' />
         <div className="container mt-24">
         </div>
       </section>
