@@ -126,28 +126,9 @@ const page = () => {
         <div className="container">
           <p className='text-center w-1/2 mx-auto' >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
 
-          <div className="grid grid-cols-3 gap-3">
-            <div class="w-full rounded">
-              <img src='/images/gallery/gallery-1.png' alt="image" />
-            </div>
-            <div class="w-full rounded">
-              <img src='/images/gallery/gallery-3.png' alt="image" />
-            </div>
-            <div class="w-full rounded">
-              <img src='/images/gallery/gallery-6.png' alt="image" />
-            </div>
-            <div class="w-full rounded">
-              <img src='/images/gallery/gallery-2.png' alt="image" />
-            </div>
-            <div class="w-full rounded">
-              <img src='/images/gallery/gallery-4.png' alt="image" />
-            </div>
-            <div class="w-full rounded">
-              <img src='/images/gallery/gallery-5.png' alt="image" />
-            </div>
-          </div>
-          {/* <div className="flex flex-col items-center justify-start w-full">
-            <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between w-full">
+
+          <div className="flex flex-col items-center justify-start w-full">
+            <div className="flex flex-row md:gap-2.5 items-center justify-between w-full">
               <div className="flex md:flex-1 flex-col gap-2.5 items-center justify-start w-[33%] md:w-full">
                 <div className="bg-white-A700 border border-gray-200 border-solid flex flex-col items-center justify-end p-3 rounded-[10px] w-full">
                   <img
@@ -160,7 +141,7 @@ const page = () => {
                   <div className="bg-white-A700 border border-gray-200 border-solid flex flex-col items-center justify-end p-3 rounded-[10px] w-full">
                     <img
                       className="h-[441px] md:h-auto object-cover rounded-[5px] w-full"
-                      src="/images/gallery/gallery-3.png"
+                      src="/images/gallery/gallery-2.png"
                       alt="rectangle19333"
                     />
                   </div>
@@ -170,14 +151,14 @@ const page = () => {
                 <div className="bg-white-A700 border border-gray-200 border-solid flex flex-col items-center justify-end p-3 rounded-[10px] w-full">
                   <img
                     className="h-[441px] md:h-auto object-cover rounded-[5px] w-full"
-                    src="/images/gallery/gallery-6.png"
+                    src="/images/gallery/gallery-3.png"
                     alt="rectangle19336"
                   />
                 </div>
                 <div className="bg-white-A700 border border-gray-200 border-solid flex flex-col items-center justify-end p-3 rounded-[10px] w-full">
                   <img
                     className="h-[227px] md:h-auto object-cover rounded-[5px] w-full"
-                    src="/images/gallery/gallery-2.png"
+                    src="/images/gallery/gallery-4.png"
                     alt="rectangle19337"
                   />
                 </div>
@@ -186,7 +167,7 @@ const page = () => {
                 <div className="bg-white-A700 border border-gray-200 border-solid flex flex-col items-center justify-end p-3 rounded-[10px] w-full">
                   <img
                     className="h-[227px] md:h-auto object-cover rounded-[5px] w-full"
-                    src="/images/gallery/gallery-4.png"
+                    src="/images/gallery/gallery-6.png"
                     alt="rectangle19341"
                   />
                 </div>
@@ -199,7 +180,7 @@ const page = () => {
                 </div>
               </div>
             </div>
-          </div> */}
+          </div>
 
           <div className={`flex mt-[100px] ${styles.resale}`}>
             <div className="w-1/2">
