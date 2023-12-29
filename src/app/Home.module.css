@@ -89,7 +89,7 @@
 
 .endBanner h2 {
     color: #FFF;
-    font-family: Roboto Serif;
+    font-family: 'Roboto Serif', serif;
     font-size: 44px;
     font-style: normal;
     font-weight: 700;
@@ -100,7 +100,7 @@
 .endBanner p {
     color: #FFF;
     text-align: center;
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -128,4 +128,69 @@
 .endBanner button svg {
     width: 24px;
     height: 24px;
+}
+
+.choose {
+    background: var(--color-tertiary-color, #111827);
+    position: relative;
+}
+
+.choose h2 {
+    color: var(--color-tertiary-color, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Roboto Serif', serif;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 34px;
+}
+
+.choose p {
+    margin-bottom: 40px;
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.card {
+    width: 250px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0px 16px 80px 0px rgba(0, 0, 0, 0.12);
+
+}
+
+.card p {
+    color: #20277C;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Roboto Serif', serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    padding: 24px 0;
+}
+
+.card .gradient h3 {
+    color: #FFF;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Roboto Serif', serif;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.card .gradient {
+    background-image: url('/images/home/Light-Gradient.png');
+    background-size: cover;
+    text-align: center;
+    padding: 30px 0;
 }
