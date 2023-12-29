@@ -1,0 +1,21 @@
+.button {
+    display: inline-flex;
+    padding: 15px 25px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 80px;
+    background: #DB2319;
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Roboto Serif', serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: capitalize;
+}
+
+.button svg {
+    width: 24px;
+    height: 24px;
+}
