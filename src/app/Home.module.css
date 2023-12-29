@@ -1,0 +1,131 @@
+.hero {
+    flex-shrink: 0;
+    background: #FFF4F0;
+    padding: 85px 0;
+}
+
+.hero h1 {
+    color: #DB2319;
+    font-family: 'Roboto Serif', serif;
+    font-size: 86px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    margin: 20px 0;
+}
+
+.subTitle {
+    color: #21277B;
+    font-family: 'Roboto Serif', serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+    padding: 0 65px;
+}
+
+.desc {
+    color: #555;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.36px;
+    padding: 0 47px;
+    margin-bottom: 32px;
+}
+
+.category h3 {
+    color: #1E2470;
+    text-align: center;
+    font-family: 'Roboto Serif', serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.category p {
+    color: #555;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+
+.category button {
+    color: #1E246F;
+    text-align: center;
+    font-family: 'Roboto Serif', serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.category {
+    margin-top: 50px;
+    padding: 26px;
+    background: #FFF;
+    transition: all .3s ease-in;
+}
+
+.category:hover {
+    border-radius: 35px;
+    box-shadow: 0px 15px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.endBanner {
+    padding: 60px 0;
+}
+
+.endBanner h2 {
+    color: #FFF;
+    font-family: Roboto Serif;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.endBanner p {
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.endBanner button {
+    display: inline-flex;
+    padding: 15px 25px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 80px;
+    background: #FFF;
+    color: #DB2319;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Roboto Serif', serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: capitalize;
+}
+
+.endBanner button svg {
+    width: 24px;
+    height: 24px;
+}

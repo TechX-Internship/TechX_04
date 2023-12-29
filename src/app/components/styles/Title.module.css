@@ -1,0 +1,22 @@
+.title {
+    text-align: center;
+}
+
+.title h4 {
+    color: #DA2218;
+    text-align: center;
+    font-family: 'Roboto Serif', serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.title h2 {
+    color: #20277C;
+    font-family: 'Roboto Serif', serif;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
