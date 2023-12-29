@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './About.module.css'
+import AboutUs from '../components/AboutUs'
 
 const page = () => {
     return (
@@ -9,6 +10,7 @@ const page = () => {
                 <h1>About us</h1>
             </section>
             {/* hero end */}
+            <AboutUs />
         </>
     )
 }
