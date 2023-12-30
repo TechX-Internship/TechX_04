@@ -1,11 +1,11 @@
 import React from 'react'
 import styles from './styles/Title.module.css'
 
-const Title = ({ title, subtitle }) => {
+const Title = ({ title, subtitle, isWhite }) => {
     return (
         <div className={styles.title}>
-            <h4>{title}</h4>
-            <h2>{subtitle}</h2>
+            <h4>{subtitle}</h4>
+            <h2 style={{ color: isWhite ? '#fff' : '' }}>{title}</h2>
         </div>
     )
 }

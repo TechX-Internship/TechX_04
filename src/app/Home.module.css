@@ -198,7 +198,7 @@
 .gallery p {
     color: #555;
     text-align: center;
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -209,7 +209,7 @@
 
 .resale h2 {
     color: #20277C;
-    font-family: Roboto Serif;
+    font-family: 'Roboto Serif', serif;
     font-size: 44px;
     font-style: normal;
     font-weight: 700;
@@ -220,7 +220,7 @@
 .resale h4 {
     color: #20277C;
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Roboto Serif;
+    font-family: 'Roboto Serif', serif;
     font-size: 34px;
     font-style: normal;
     font-weight: 600;
@@ -230,7 +230,7 @@
 .resale p {
     color: var(--Dark-Black-2, #757A77);
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;

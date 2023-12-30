@@ -6,7 +6,7 @@ import Button from './Button'
 
 const Header = () => {
     return (
-        <header>
+        <header className='bg-white'>
             <div className="container flex items-center justify-between">
                 <div className={styles.logo}>
                     <Image alt='logo' src={'/images/logo.png'} width={166} height={80} />

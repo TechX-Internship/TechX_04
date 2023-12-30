@@ -16,14 +16,12 @@ const page = () => {
               <img src="/images/home/hero.png" alt="hero" width={'100%'} />
             </div>
             <div className="w-1/2">
-              <div className="w-fit ml-auto text-center">
+              <div className="w-full text-center">
                 <p className={styles.subTitle}>BEST TRAVEL AGENCY OF GUJARAT</p>
                 <h1>TRAVEL MANDI</h1>
-                <div className="w-[585px] mx-[47px] text-center">
-                  <p className={styles.desc}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Pellentesque efficitur ac quam in congue. . </p>
-                  <Button name={'Plan a trip'} />
-                </div>
+                <p className={styles.desc}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Pellentesque efficitur ac quam in congue. . </p>
+                <Button name={'Plan a trip'} />
               </div>
             </div>
           </div>
@@ -114,7 +112,7 @@ const page = () => {
 
       {/* plan start */}
       <section className='pt-52 pb-24'>
-        <Title subtitle='Plan Your Trip' title='Make Your Holiday Amazing' />
+        <Title title='Plan Your Trip' subtitle='Make Your Holiday Amazing' />
         <div className="container mt-24">
         </div>
       </section>
@@ -122,9 +120,9 @@ const page = () => {
 
       {/* gallery start */}
       <section className={`${styles.gallery} py-[100px]`}>
-        <Title title='GALLERY' subtitle='memories We Collect' />
+        <Title subtitle='GALLERY' title='memories We Collect' />
         <div className="container">
-          <p className='text-center w-1/2 mx-auto' >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+          <p className='text-center w-2/3 mx-auto' >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
 
 
           <div className="flex flex-col items-center justify-start w-full">
