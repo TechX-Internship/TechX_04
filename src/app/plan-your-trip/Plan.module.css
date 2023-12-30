@@ -1,0 +1,88 @@
+.plan {
+    padding: 100px 0 250px;
+}
+
+.plan h2 {
+    color: #20277C;
+    font-family: Roboto Serif;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.plan h3 {
+    color: #000;
+    font-family: Roboto Serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.plan p {
+    color: #555;
+    text-align: justify;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+
+.plan span {
+    color: var(--B3, #6A6A6A);
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.dream {
+    padding: 150px 0;
+}
+
+.dream h2 {
+    color: #20277C;
+    font-family: Roboto Serif;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.dream p {
+    color: #555;
+    text-align: center;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 155.556% */
+}
+
+.dream h5 {
+    color: #FFFCFC;
+    font-family: Roboto Serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.dream span {
+    color: #FFFEFE;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
