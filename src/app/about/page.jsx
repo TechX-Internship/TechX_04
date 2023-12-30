@@ -3,15 +3,12 @@ import styles from './About.module.css'
 import AboutUs from '../components/AboutUs'
 import Title from '../components/Title'
 import Button from '../components/Button'
+import Hero from '../components/Hero'
 
 const page = () => {
     return (
         <>
-            {/* hero start */}
-            <section className={styles.hero}>
-                <h1>About us</h1>
-            </section>
-            {/* hero end */}
+            <Hero title='About us' />
             <AboutUs />
 
             <section className={styles.about} >
