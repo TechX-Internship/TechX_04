@@ -3,6 +3,10 @@ import styles from './Home.module.css'
 import Button from './components/Button'
 import AboutUs from './components/AboutUs'
 import Title from './components/Title'
+import Slider from './components/Slider'
+import HomeTesti from './components/HomeTesti'
+import HomeTrip from './components/HomeTrip'
+
 
 const page = () => {
   return (
@@ -111,12 +115,10 @@ const page = () => {
       {/* choose end */}
 
       {/* plan start */}
-      <section className='pt-52 pb-24'>
-        <Title title='Plan Your Trip' subtitle='Make Your Holiday Amazing' />
-        <div className="container mt-24">
-        </div>
-      </section>
+      <HomeTrip />
       {/* plan end */}
+
+      <HomeTesti />
 
       {/* gallery start */}
       <section className={`${styles.gallery} py-[100px]`}>

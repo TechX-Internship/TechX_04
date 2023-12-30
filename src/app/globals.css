@@ -14,3 +14,22 @@
   max-width: 1440px;
   margin: auto;
 }
+
+/* swiper */
+.swiper-button-prev,
+.swiper-button-next {
+  width: 65px !important;
+  height: 65px !important;
+  background-color: #DB2319;
+  border-radius: 100%;
+  position: relative;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

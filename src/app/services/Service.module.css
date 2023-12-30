@@ -4,7 +4,7 @@
 
 .service h2 {
     color: #20277C;
-    font-family: Roboto Serif;
+    font-family: 'Roboto Serif', serif;
     font-size: 44px;
     font-style: normal;
     font-weight: 700;
@@ -13,7 +13,7 @@
 
 .service h3 {
     color: #000;
-    font-family: Roboto Serif;
+    font-family: 'Roboto Serif', serif;
     font-size: 42px;
     font-style: normal;
     font-weight: 600;
@@ -24,7 +24,7 @@
 .service p {
     color: #555;
     text-align: justify;
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
