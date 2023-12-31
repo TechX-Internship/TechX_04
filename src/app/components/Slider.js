@@ -16,7 +16,7 @@ import { Navigation, Autoplay, Pagination } from 'swiper/modules';
 
 const Slider = ({ children, slidesPerView }) => {
     return (
-        <Swiper slidesPerView={slidesPerView} loop={true} autoplay={{ delay: 1000 }} navigation={true} modules={[Navigation, Autoplay, Pagination]} className="mySwiper">
+        <Swiper slidesPerView={slidesPerView} loop={true} autoplay={{ delay: 1000, pauseOnMouseEnter: true }} navigation={true} modules={[Navigation, Autoplay, Pagination]} className="mySwiper">
             {children}
         </Swiper>
     )

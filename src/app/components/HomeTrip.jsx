@@ -3,7 +3,7 @@ import React from 'react'
 import Title from './Title'
 import Slider from './Slider'
 import { SwiperSlide } from 'swiper/react'
-import styles from './styles/HomeTrip.module.css'
+import './styles/HomeTrip.css'
 import Button from './Button'
 
 const HomeTrip = () => {
@@ -34,12 +34,12 @@ const HomeTrip = () => {
         <>
             <section className='pt-52 pb-24'>
                 <Title title='Plan Your Trip' subtitle='Make Your Holiday Amazing' />
-                <div className={styles.trip}>
-                    <div className="container">
+                <div className='trip'>
+                    <div className="container relative">
                         <Slider slidesPerView={4} >
                             {
                                 data.map((item, i) =>
-                                    <SwiperSlide>
+                                    <SwiperSlide key={i}>
                                         <div className='text-center w-fit'>
                                             <img src={item.img} alt="" />
                                             <h3 className='mt-[25px]'>{item.title}</h3>

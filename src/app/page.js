@@ -3,24 +3,62 @@ import styles from './Home.module.css'
 import Button from './components/Button'
 import AboutUs from './components/AboutUs'
 import Title from './components/Title'
-import Slider from './components/Slider'
 import HomeTesti from './components/HomeTesti'
 import HomeTrip from './components/HomeTrip'
-
+import Image from 'next/image'
 
 const page = () => {
+
+  const serviceData = [
+    {
+      img: '/images/home/tour-guide.png',
+      title: 'Guided Tours',
+      des: 'Lorem Ipsum is simply dummy text of the printing and typesetting niolfjkxoindustry. Lorem......'
+    },
+    {
+      img: '/images/home/travelling.png',
+      title: 'Guided Tours',
+      des: 'Lorem Ipsum is simply dummy text of the printing and typesetting niolfjkxoindustry. Lorem......'
+    },
+    {
+      img: '/images/home/map.png',
+      title: 'Religious Tours',
+      des: 'Lorem Ipsum is simply dummy text of the printing and typesetting niolfjkxoindustry. Lorem......'
+    },
+    {
+      img: '/images/home/medical-team.png',
+      title: 'Medical insurance',
+      des: 'Lorem Ipsum is simply dummy text of the printing and typesetting niolfjkxoindustry. Lorem......'
+    }
+  ]
+
   return (
     <>
       {/* hero start */}
       <section className={styles.hero}>
+
+        <img className='absolute left-5 top-[30%]' src="/images/home/elements/map.png" alt="" />
+        <img className='absolute left-16 bottom-[25%]' src="/images/home/elements/compass.png" alt="" />
+        <img className='absolute left-[10%] bottom-[20px]' src="/images/home/elements/specs.png" alt="" />
+        <img className='absolute left-[43%] top-[10%]' src="/images/home/elements/camera.png" alt="" />
+        <img className='absolute right-0 bottom-0' src="/images/home/elements/bag.png" alt="" />
+        <img className='absolute right-0 top-1/2' src="/images/home/elements/wp.png" alt="" />
+
         <div className="container">
-          <div className="flex items-center">
+          <div className="flex items-center relative z-0">
+
+            <img className='absolute left-[40%] -z-10 top-[10%]' src="/images/home/elements/path.png" alt="" />
+            <img className='absolute left-[60%] top-[1.5%]' src="/images/home/elements/plane.png" alt="" />
+
             <div className="w-1/2">
-              {/* <Image alt='hero' src={'/images/home/hero.png'} width={677} height={656} /> */}
-              <img src="/images/home/hero.png" alt="hero" width={'100%'} />
+              <Image alt='hero' src={'/images/home/hero.png'} width={677} height={656} />
             </div>
             <div className="w-1/2">
-              <div className="w-full text-center">
+              <div className="w-full text-center relative">
+
+                <img className='absolute -right-[10%] -top-[30%]' src="/images/home/elements/hat.png"
+                  alt="" />
+
                 <p className={styles.subTitle}>BEST TRAVEL AGENCY OF GUJARAT</p>
                 <h1>TRAVEL MANDI</h1>
                 <p className={styles.desc}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -40,30 +78,16 @@ const page = () => {
         <div className="container">
           <Title title='We Offer Best Services' subtitle='CATEGORY' />
           <div className={`flex gap-7`}>
-            <div className={`w-1/4 ${styles.category} text-center`}>
-              <img src="/images/home/tour-guide.png" className='mx-auto mb-5' alt="" />
-              <h3>Guided Tours</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting niolfjkxoindustry. Lorem......  </p>
-              <button>Read More</button>
-            </div>
-            <div className={`w-1/4 ${styles.category} text-center`}>
-              <img src="/images/home/travelling.png" className='mx-auto mb-5' alt="" />
-              <h3>Guided Tours</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting niolfjkxoindustry. Lorem......  </p>
-              <button>Read More</button>
-            </div>
-            <div className={`w-1/4 ${styles.category} text-center`}>
-              <img src="/images/home/map.png" className='mx-auto mb-5' alt="" />
-              <h3>Religious Tours</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting niolfjkxoindustry. Lorem......  </p>
-              <button>Read More</button>
-            </div>
-            <div className={`w-1/4 ${styles.category} text-center`}>
-              <img src="/images/home/medical-team.png" className='mx-auto mb-5' alt="" />
-              <h3>Medical insurance</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting niolfjkxoindustry. Lorem......  </p>
-              <button>Read More</button>
-            </div>
+            {
+              serviceData.map((item, i) =>
+                <div key={i} className={`w-1/4 ${styles.category} text-center`}>
+                  <img src={item.img} className='mx-auto mb-5' alt="" />
+                  <h3>{item.title}</h3>
+                  <p>{item.des}</p>
+                  <button>Read More</button>
+                </div>
+              )
+            }
           </div>
         </div>
       </section>
@@ -223,7 +247,7 @@ const page = () => {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed erat vel tortor aliquam ornare. Vestibulum blandit lorem non sodales molestie. </p>
           <button className='' >Get A Quote
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <path d="M9 5L16 12L9 19" stroke="#DB2319" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M9 5L16 12L9 19" stroke="#DB2319" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </button>
         </div>

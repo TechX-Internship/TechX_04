@@ -7,6 +7,23 @@ import Hero from '../components/Hero'
 import Link from 'next/link'
 
 const page = () => {
+
+    const data = [
+        {
+            img: '/images/about/guide-1.png',
+            title: 'Ivan Cairns',
+            role: 'Guide'
+        }, {
+            img: '/images/about/guide-2.png',
+            title: 'Ivan Cairns',
+            role: 'Guide'
+        }, {
+            img: '/images/about/guide-3.png',
+            title: 'Ivan Cairns',
+            role: 'Guide'
+        }
+    ]
+
     return (
         <>
             <Hero title='About us' />
@@ -60,49 +77,27 @@ const page = () => {
                 <div className="container">
                     <div className="text-center">
                         <Title title='Meet With Professional Guide' subtitle='Our Guide' />
-                        <p className='mx-auto w-2/3 pb-10'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,</p>
+                        <p className='mx-auto w-2/3 pb-10 mt-[15px]'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,</p>
                     </div>
 
                     <div className="flex gap-[30px]">
-                        <div className="w-1/3 relative">
-                            <img src="/images/about/guide-1.png" alt="" />
-                            <Link href='/our-guide/1' className={styles.guide_card}>
-                                <h3 className='w-full'>Ivan Cairns
-                                    <span className='float-end pt-1.5 pl-3'>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                            <path d="M9 5L16 12L9 19" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                        </svg>
-                                    </span>
-                                </h3>
-                                <span>Guide</span>
-                            </Link>
-                        </div>
-                        <div className="w-1/3 relative">
-                            <img src="/images/about/guide-2.png" alt="" />
-                            <Link href='/our-guide/2' className={styles.guide_card}>
-                                <h3 className='w-full'>Ivan Cairns
-                                    <span className='float-end pt-1.5 pl-3'>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                            <path d="M9 5L16 12L9 19" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                        </svg>
-                                    </span>
-                                </h3>
-                                <span>Guide</span>
-                            </Link>
-                        </div>
-                        <div className="w-1/3 relative">
-                            <img src="/images/about/guide-3.png" alt="" />
-                            <Link href='/our-guide/3' className={styles.guide_card}>
-                                <h3 className='w-full'>Ivan Cairns
-                                    <span className='float-end pt-1.5 pl-3'>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                            <path d="M9 5L16 12L9 19" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                        </svg>
-                                    </span>
-                                </h3>
-                                <span>Guide</span>
-                            </Link>
-                        </div>
+                        {
+                            data.map((item, i) =>
+                                <div className="w-1/3 relative" key={i}>
+                                    <img src={item.img} alt="" />
+                                    <Link href={`/our-guide/${i + 1}`} className={styles.guide_card}>
+                                        <h3 className='w-full'>{item.title}
+                                            <span className='float-end pt-1.5 pl-3'>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                    <path d="M9 5L16 12L9 19" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                                </svg>
+                                            </span>
+                                        </h3>
+                                        <span>{item.role}</span>
+                                    </Link>
+                                </div>
+                            )
+                        }
                     </div>
                 </div>
 

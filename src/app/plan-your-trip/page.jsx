@@ -40,12 +40,12 @@ const page = () => {
 
             <section className={styles.dream}>
                 <div className="container">
-                    <h2 className='text-center'>Let,s Plan The Trip Of Your Dreams</h2>
+                    <h2 className='text-center mb-[15px]'>Let,s Plan The Trip Of Your Dreams</h2>
                     <p className='w-1/2 mx-auto'>
                         There are basically six key areas to higher achievement. Some people will tell you there are four while others may tell you there are eight.
                     </p>
 
-                    <div className="flex">
+                    <div className="flex mt-[50px]">
                         <div className="flex-1">
                             <img src="/images/plan-your-trip/plan-4.png" className='h-full w-full' alt="" />
                         </div>

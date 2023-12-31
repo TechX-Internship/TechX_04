@@ -2,6 +2,7 @@
     flex-shrink: 0;
     background: #FFF4F0;
     padding: 85px 0;
+    position: relative;
 }
 
 .hero h1 {
