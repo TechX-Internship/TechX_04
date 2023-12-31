@@ -4,6 +4,7 @@ import AboutUs from '../components/AboutUs'
 import Title from '../components/Title'
 import Button from '../components/Button'
 import Hero from '../components/Hero'
+import Link from 'next/link'
 
 const page = () => {
     return (
@@ -65,7 +66,7 @@ const page = () => {
                     <div className="flex gap-[30px]">
                         <div className="w-1/3 relative">
                             <img src="/images/about/guide-1.png" alt="" />
-                            <div className={styles.guide_card}>
+                            <Link href='/our-guide/1' className={styles.guide_card}>
                                 <h3 className='w-full'>Ivan Cairns
                                     <span className='float-end pt-1.5 pl-3'>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -74,11 +75,11 @@ const page = () => {
                                     </span>
                                 </h3>
                                 <span>Guide</span>
-                            </div>
+                            </Link>
                         </div>
                         <div className="w-1/3 relative">
                             <img src="/images/about/guide-2.png" alt="" />
-                            <div className={styles.guide_card}>
+                            <Link href='/our-guide/2' className={styles.guide_card}>
                                 <h3 className='w-full'>Ivan Cairns
                                     <span className='float-end pt-1.5 pl-3'>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -87,11 +88,11 @@ const page = () => {
                                     </span>
                                 </h3>
                                 <span>Guide</span>
-                            </div>
+                            </Link>
                         </div>
                         <div className="w-1/3 relative">
                             <img src="/images/about/guide-3.png" alt="" />
-                            <div className={styles.guide_card}>
+                            <Link href='/our-guide/3' className={styles.guide_card}>
                                 <h3 className='w-full'>Ivan Cairns
                                     <span className='float-end pt-1.5 pl-3'>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -100,7 +101,7 @@ const page = () => {
                                     </span>
                                 </h3>
                                 <span>Guide</span>
-                            </div>
+                            </Link>
                         </div>
                     </div>
                 </div>
