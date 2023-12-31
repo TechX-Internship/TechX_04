@@ -40,7 +40,7 @@ const HomeTrip = () => {
                             {
                                 data.map((item, i) =>
                                     <SwiperSlide key={i}>
-                                        <div className='text-center w-fit'>
+                                        <div className='text-center w-fit mx-auto'>
                                             <img src={item.img} alt="" />
                                             <h3 className='mt-[25px]'>{item.title}</h3>
                                             <div className='flex mb-5 gap-[5px] mx-auto w-fit mt-2.5'><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
